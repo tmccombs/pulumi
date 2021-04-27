@@ -9,7 +9,10 @@
 
 - [auto/go] - Provide GetPermalink for all results
   [#6875](https://github.com/pulumi/pulumi/pull/6875)
-  
+
+- [sdk/nodejs] - Warn when a secret config is read as a non-secret
+  [#6896](https://github.com/pulumi/pulumi/pull/6896)
+
 ### Bug Fixes
 
  - [auto/python] - Export missing `ProjectBackend` type
