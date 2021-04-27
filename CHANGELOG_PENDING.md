@@ -10,6 +10,9 @@
 - [auto/go] - Provide GetPermalink for all results
   [#6875](https://github.com/pulumi/pulumi/pull/6875)
 
+- [sdk/nodejs|python] - Add GetSchema support to providers
+  [#6892](https://github.com/pulumi/pulumi/pull/6892)
+
 ### Bug Fixes
 
  - [auto/python] - Export missing `ProjectBackend` type
