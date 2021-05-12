@@ -667,7 +667,8 @@ func testComponentProviderSchema(t *testing.T, path string, env ...string) {
 			err = cmd.Start()
 			assert.NoError(t, err)
 			defer func() {
-				assert.NoError(t, cmd.Process.Kill())
+				// Ignore the error as it may fail with access denied on Windows.
+				cmd.Process.Kill() // nolint: errcheck
 			}()
 
 			// Read the port from standard output.
